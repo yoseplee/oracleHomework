@@ -1,3 +1,3 @@
-FROM tomcat:latest
-RUN mkdir -p /usr/local/tomcat/webapps/test/WEB-INF/lib
+FROM tomcat
+RUN rm -rf /usr/local/tomcat/webapps/ROOT
 CMD ["catalina.sh", "run"]
