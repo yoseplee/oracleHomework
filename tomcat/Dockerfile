@@ -1,4 +1,4 @@
-FROM tomcat:latest
+FROM tomcat:7-jre8
 RUN mkdir -p /usr/local/tomcat/webapps/test/WEB-INF/lib
 COPY ./mysql-connector-java-5.1.44-bin.jar /usr/local/tomcat/webapps/test/WEB-INF/lib 
 COPY ./web.xml /usr/local/tomcat/webapps/test/WEB-INF
